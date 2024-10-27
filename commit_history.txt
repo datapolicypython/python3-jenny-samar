@@ -1,0 +1,10 @@
+882870d - Summer99D, 6 minutes ago : we accepted both changes
+0a601c9 - Summer99D, 7 minutes ago : merging changes
+e0968a4 - datapolicypython, 13 minutes ago : histogram
+1f90997 - Summer99D, 36 minutes ago : Merge pull request #3 from datapolicypython/describe
+511525e - Summer99D, 42 minutes ago : I modified the function
+7c7ae69 - Summer99D, 51 minutes ago : we accepted partner(Jenny's) changes
+35e4725 - Summer99D, 67 minutes ago : Merge pull request #1 from datapolicypython/merge_conflict_jenny
+e3c98fe - datapolicypython, 68 minutes ago : name change
+0326c90 - Summer99D, 68 minutes ago : changing my name
+45213be - datapolicypython, 73 minutes ago : QMD file

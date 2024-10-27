@@ -1,6 +1,6 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Jenny Zhong"
+author: "Jenny Zhong and Samar Negahdar"
 format: 
   pdf:
     keep-tex: true
@@ -16,7 +16,15 @@ include-before-body:
       breaksymbolleft={},
       breaklines
     }
+execute:
+  eval: true
+  echo: true
+
 ---
+
+Partner1: Jenny Zhong, datapolicypython
+
+Partner2: Samar Negahdar, Summer99D
 
 ```{python}
 import pandas as pd
@@ -28,12 +36,8 @@ data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 
 def preview_data(df):
     head = df.head()
-    head_data = df.head()  
+    
     description = df.describe()  
-    return [head_data, description]  
-result = preview_data(data)
-for item in result:
-    print(item, end='\n\n')
 
     histogram = alt.Chart(df).mark_bar().encode(
       x=alt.X('Random Numbers', bin=True),
@@ -41,9 +45,40 @@ for item in result:
     ).properties(
       title='Histogram of Random Numbers'
     )
-    return [head, histogram]
+    
+    return [head, head, histogram]
 
 output = preview_data(data)
-output[0]
-output[1]
+
+print("Data Head:\n", output[0], "\n")
+
+print("Descriptive Statistics:\n", output[1], "\n")
+
+output[2]
 ```
+
+
+
+![](histogram.png){width=600px height=400px}
+
+**Commit history:**
+882870d - Summer99D, 6 minutes ago : we accepted both changes
+
+0a601c9 - Summer99D, 7 minutes ago : merging changes
+
+e0968a4 - datapolicypython, 13 minutes ago : histogram
+
+1f90997 - Summer99D, 36 minutes ago : Merge pull request #3 from datapolicypython/describe
+
+511525e - Summer99D, 42 minutes ago : I modified the function
+
+7c7ae69 - Summer99D, 51 minutes ago : we accepted partner(Jenny's) changes
+
+35e4725 - Summer99D, 67 minutes ago : Merge pull request #1 from datapolicypython/merge_conflict_jenny
+
+e3c98fe - datapolicypython, 68 minutes ago : name change
+
+0326c90 - Summer99D, 68 minutes ago : changing my name
+
+45213be - datapolicypython, 73 minutes ago : QMD file
+
