@@ -28,6 +28,12 @@ data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 
 def preview_data(df):
     head = df.head()
+    head_data = df.head()  
+    description = df.describe()  
+    return [head_data, description]  
+result = preview_data(data)
+for item in result:
+    print(item, end='\n\n')
 
     histogram = alt.Chart(df).mark_bar().encode(
       x=alt.X('Random Numbers', bin=True),
